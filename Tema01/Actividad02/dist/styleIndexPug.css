@@ -1,0 +1,66 @@
+body{
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    margin:0;
+}
+main{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+}
+header, footer {
+    text-align: center;
+}
+header{
+    background-color: aqua;
+}
+.container{
+    display: flex; 
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 800px; 
+    width: 100%; 
+}
+.box1{
+    background-color: greenyellow;
+    grid-column: 1 / -1;
+    margin: 2rem;
+    padding: 2rem;
+}
+
+.box-macs{
+    background-color: lightcoral;
+    border: 0.3rem solid rgb(110, 110, 110);
+    overflow-y: auto;
+    max-width: 50rem;
+    margin:auto;
+}
+
+table button {
+    margin: 0.2rem;
+    padding: 0.5rem 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+table {
+    width: 100%;
+    /* Añade 'border-collapse' para que los bordes de la tabla sean más limpios */
+    border-collapse: collapse;
+}
+
+th, td {
+    background-color: antiquewhite;
+    text-align: center;
+    padding: 0.5rem;
+}
+
+footer{
+    background-color: lightblue;
+    height: 4rem;
+    
+}

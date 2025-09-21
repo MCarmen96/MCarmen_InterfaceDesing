@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+
+}
+
+header,footer{
+    text-align: center;
+    padding: 1rem;
+    
+}
+header{
+    background-color: aqua;
+}
+footer{
+    margin-top:auto;
+    background-color: antiquewhite;
+    
+}
+main{
+    flex-grow: 1;
+    display: grid;
+    place-items: center;
+}
+.container{
+    display: grid;
+    grid-template-columns:1fr;
+    gap: 1rem;
+    width: 100%;
+    max-width: 60rem;
+    padding: 1rem;
+    box-sizing: border-box;
+
+}
+.box1{
+    background-color: greenyellow;
+    padding: 2rem;
+    text-align: center;
+}
+
+.box-macs {
+    background-color: lightcoral;
+    border: 0.3rem solid rgb(110, 110, 110);
+    padding: 1rem;
+    overflow-y: auto;
+}
+
+.box-macs p, .box-macs label {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.box-macs p {
+    margin: 0.5rem 0.5rem 0.5rem 0;
+}
+
+

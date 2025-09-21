@@ -1,0 +1,48 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Document
+        link(rel="stylesheet", href="styleIndexPug.css")
+    body 
+       
+        header
+            h1 REGISTRO DE MACS 
+            main
+                div  
+                form(action="").container 
+                    div.box1
+                        label(for="") MAC 
+                        input(type="text" placeholder="escribe aqui...")
+                        label(for="") Clase 
+                        input(type="text" placeholder="escribe aqui...") 
+                        button ADD 
+                    div.box-macs 
+                        h3 Listado de MACS a añadir 
+                        table 
+                            thead 
+                                tr
+                                    th Number Macs 
+                                    th Clase
+                            tr 
+                                td 
+                                    span 88:88:88:88
+                                    label(for="")
+                        
+                                td 
+                                    span DAW2
+                                
+                                td  
+                                    input(type="checkbox")
+                                    button DELETE 
+                                    button EDIT 
+
+                        
+                           
+
+                    div.box-buttom 
+                        button ADD  
+                        
+        footer 
+            p Gestor de MACS
