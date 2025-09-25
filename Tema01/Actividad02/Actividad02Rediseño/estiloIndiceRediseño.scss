@@ -1,0 +1,41 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Courier New', Courier, monospace;
+    margin: 0;
+}
+header,footer{
+    text-align: center;
+    width: 100%;
+    background-color: aquamarine;
+    padding: 1rem;
+}
+main{
+    margin: auto;
+    background-color: lightblue;
+
+    section{
+        display:block;
+        padding: 20px;
+        width:30%;
+        background-color: coral;
+        form div{
+            display: inline-block;
+        }
+    }
+
+    aside{
+        padding: 1rem;
+        width: 50%;
+        display: inline-block;
+        background-color: lightgreen;
+
+        table{
+            width: 30%;
+            display: inline-block;
+            text-align: center;
+        }
+    }
+
+}
