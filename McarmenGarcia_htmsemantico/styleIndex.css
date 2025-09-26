@@ -5,6 +5,15 @@ body{
     min-height: 100%;
 
 }
+table{
+    width: 100%;
+    border-collapse: separate;
+}
+/*colorea los tr cada una de un color por si una es impar*/
+table tr:nth-child(odd){
+    background-color: lightgray;
+    padding: 1rem;
+}
 
 header{
     text-align: center;
@@ -31,8 +40,7 @@ header{
     margin: auto;
     overflow-y: scroll;
     display:block;
-    gap: 0.5rem;
-    width: 50rem;
+    padding: 1rem;
 }
 
 footer{
