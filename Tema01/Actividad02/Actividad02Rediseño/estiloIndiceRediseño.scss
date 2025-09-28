@@ -12,19 +12,36 @@ header,footer{
     padding: 1rem;
 }
 main{
-    margin: auto;
+    text-align: center;
     background-color: lightblue;
+    padding: 2rem;
 
-    section{
-        display:block;
-        padding: 20px;
-        width:30%;
+    section {
+        display:inline-block;
+        padding: 1rem;
+        width:40%;
         background-color: coral;
-        form div{
-            display: inline-block;
+        button{
+            background-color: rgb(255, 243, 229);
+            border-radius: 0.5rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        button:hover{
+            background-color: rgb(194, 179, 160);
         }
     }
 
+    .box-inputs div{
+        background-color: aqua;
+        margin-bottom: 15px;
+        align-items: center;
+    }
+    .box-inputs label{
+        
+        width: 60%;
+        text-align: left;
+        margin-right: 10px;
+    }
     aside{
         padding: 1rem;
         width: 50%;
@@ -32,10 +49,29 @@ main{
         background-color: lightgreen;
 
         table{
-            width: 30%;
-            display: inline-block;
+            background-color: aqua;
+            width: 100%;
             text-align: center;
         }
+        table tr td{
+            width: 30%;
+        }
+        button{
+            background-color: rgb(255, 243, 229);
+            border-radius: 0.5rem;
+            font-family: 'Courier New', Courier, monospace;
+        }
+        button:hover{
+            background-color: rgb(194, 179, 160);
+        }
+        table tbody tr:nth-child(odd){
+        background-color: rgb(187, 252, 187);
+        padding: 1rem;
+        }
+    }
+    aside div{
+        text-align: right;
+        margin-top: 30px;
     }
 
 }
