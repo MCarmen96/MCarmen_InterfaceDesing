@@ -1,15 +1,10 @@
-doctype html
-html(lang="en")
-    head
-        meta(charset="UTF-8")
-        meta(name="viewport", content="width=device-width, initial-scale=1.0")
-        title MACS DISEÑO 02
-        link(rel="stylesheet", href="estiloIndiceRediseño.css")
-    body 
-        header 
+extend layout 
+block header  
+    header 
             h1 REGISTRO MACS 
-        main 
-            section 
+
+block resgistroMacs 
+        section 
                 form(action="")
                     div 
                         h2 ADD MACS
@@ -18,7 +13,9 @@ html(lang="en")
                         label(for="") Clase 
                         input(type="text" placeholder="write here...") 
                     button ADD 
-            aside 
+
+block tablaMacs 
+         aside 
                 table 
                     thead 
                         tr
@@ -49,5 +46,7 @@ html(lang="en")
                                 button EDIT 
                 div
                     button SEND 
+block foot      
         footer 
             p --M.CARMEN GARCIA NAVARRO--
+
