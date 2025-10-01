@@ -1,53 +1,57 @@
-extend layout 
-//aqui irian los icnlues al ir cada bloque en un archivo
+extends layout 
 block header  
     header 
-            h1 REGISTRO MACS 
-
+        h1 REGISTRO MACS 
 block resgistroMacs 
-        section 
-                form(action="")
-                    div 
-                        h2 ADD MACS
-                        label(for="") Mac 
-                        input(type="text" placeholder="write here...") 
-                        label(for="") Clase 
-                        input(type="text" placeholder="write here...") 
-                    button ADD 
-
+    section 
+        form(action="")
+            div 
+                h2 ADD MACS
+                label(for="") Mac 
+                    input(type="text" placeholder="write here...") 
+                label(for="") Clase 
+                    input(type="text" placeholder="write here...") 
+                button ADD 
 block tablaMacs 
-        aside 
-                table 
-                    thead 
-                        tr
-                            th Number Macs 
-                            th Clase
-                        tr 
-                            td 
-                                span 88:88:88:88
+    aside 
+        table 
+            thead 
+                tr
+                    th Number Macs 
+                    th Clase
+                tr 
+                    td 
+                        span 88:88:88:88
+                    td 
+                        span DAW2
+                    td  
+                        input(type="checkbox")
+                        button DELETE 
+                        button EDIT 
+                tr 
+                    td 
+                        span 88:88:88:88
+                    td 
+                        span DAW2
+                    td  
+                        input(type="checkbox")
+                        button DELETE 
+                        button EDIT 
+                tr 
+                    td 
+                        span 88:88:88:88
+                        label(for="")
                             
-                            td 
-                                span DAW2
-                                
-                            td  
-                                input(type="checkbox")
-                                button DELETE 
-                                button EDIT 
-                        tr 
-                            td 
-                                span 88:88:88:88
-                                label(for="")
-                            
-                            td 
-                                span DAW2
+                    td 
+                        span DAW2
                                     
-                            td  
-                                input(type="checkbox")
-                                button DELETE 
-                                button EDIT 
-                div
-                    button SEND 
+                    td  
+                        input(type="checkbox")
+                        button DELETE 
+                        button EDIT 
+        div
+            button SEND 
 block foot      
-        footer 
-            p --M.CARMEN GARCIA NAVARRO--
+    footer 
+        p --M.CARMEN GARCIA NAVARRO--
 
