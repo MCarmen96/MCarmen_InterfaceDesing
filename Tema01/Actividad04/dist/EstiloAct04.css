@@ -7,8 +7,8 @@ body {
   margin: 0;
 }
 
-header, footer {
-  text-align: center;
+.header__footer {
+  align-items: center;
   width: 100%;
   background-color: aquamarine;
   padding: 1rem;
@@ -25,26 +25,18 @@ main section {
   width: 40%;
   background-color: coral;
 }
-main section form div div__label mac__label {
-  display: inline-block;
+main section .form__div {
+  width: 100%;
+  margin-bottom: 15px;
+  align-items: center;
 }
-main section button {
+main section .form__div__button {
   background-color: #fff3e5;
   border-radius: 0.5rem;
   font-family: "Courier New", Courier, monospace;
 }
 main section button:hover {
   background-color: #c2b3a0;
-}
-main .box-inputs div {
-  background-color: aqua;
-  margin-bottom: 15px;
-  align-items: center;
-}
-main .box-inputs label {
-  width: 60%;
-  text-align: left;
-  margin-right: 10px;
 }
 main aside {
   padding: 1rem;
@@ -60,7 +52,7 @@ main aside table {
 main aside table tr td {
   width: 30%;
 }
-main aside button {
+main aside .td__button {
   background-color: #fff3e5;
   border-radius: 0.5rem;
   font-family: "Courier New", Courier, monospace;
@@ -72,7 +64,7 @@ main aside table tbody tr:nth-child(odd) {
   background-color: #bbfcbb;
   padding: 1rem;
 }
-main aside div {
+main .aside__div_buttom {
   text-align: right;
   margin-top: 30px;
 }
