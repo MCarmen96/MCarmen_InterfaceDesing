@@ -20,21 +20,22 @@ div.album.py-5.bg-body-tertiary
                         small.text-body-secondary 9 mins
             div.col
                 div.card.shadow-sm
-                    svg.bd-placeholder-img.card-img-top(aria-label='Placeholder: Thumbnail' height='225' preserveaspectratio='xMidYMid slice' role='img' width='100%' xmlns='http://www.w3.org/2000/svg')
-                        title Placeholder
-                        rect(width='100%' height='100%' fill='#55595c')
-                        text(x='50%' y='50%' fill='#eceeef' dy='.3em') Thumbnail
-                        
-                    div.card-body
-                        p.card-text
-                        | This is a wider card with supporting text below as a natural
-                        | lead-in to additional content. This content is a little bit
-                        | longer.
-                        div.d-flex.justify-content-between.align-items-center
-                        div.btn-group
-                            button.btn.btn-sm.btn-outline-secondary(type='button') View
-                            button.btn.btn-sm.btn-outline-secondary(type='button') Edit
-                        small.text-body-secondary 9 mins
+                    form.form-signin w-100 m-auto
+                        img.mb-4(src='../assets/brand/bootstrap-logo.svg' alt='' width='72' height='57')
+                        h1.h3.mb-3.fw-normal Please sign in
+                        .form-floating
+                            input#floatingInput.form-control(type='email' placeholder='name@example.com')
+                            label(for='floatingInput') Email address
+                        .form-floating
+                            input#floatingPassword.form-control(type='password' placeholder='Password')
+                            label(for='floatingPassword') Password
+                        .form-check.text-start.my-3
+                            input.form-check-input(type='checkbox' value='remember-me')#checkDefault
+                            label.form-check-label(for='checkDefault')
+                            | Remember me
+                        button.btn.btn-primary.w-100.py-2(type='submit')
+                            | Sign in
+                        p.mt-5.mb-3.text-body-secondary &copy; 2017&ndash;2025
             div.col
                 div.card.shadow-sm
                     svg.bd-placeholder-img.card-img-top(aria-label='Placeholder: Thumbnail' height='225' preserveaspectratio='xMidYMid slice' role='img' width='100%' xmlns='http://www.w3.org/2000/svg')

@@ -8,6 +8,7 @@
     <script src="../JS/bootstrap.js"></script>
     <link href="../CSS/bootstrap.css" rel="stylesheet">
     <link href="../CSS/listGroup.css" rel="stylesheet">
+    <link href="../CSS/singin.css" rel="stylesheet">
     <link rel="stylesheet" href="../CSS/estilosAlbum.css">
     <meta name="theme-color" content="#712cf9">
   </head>
@@ -126,21 +127,23 @@
             </div>
             <div class="col">
               <div class="card shadow-sm">
-                <svg class="bd-placeholder-img card-img-top" aria-label="Placeholder: Thumbnail" height="225" preserveaspectratio="xMidYMid slice" role="img" width="100%" xmlns="http://www.w3.org/2000/svg">
-                  <title>Placeholder</title>
-                  <rect width="100%" height="100%" fill="#55595c"></rect>
-                  <text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text>
-                </svg>
-                <div class="card-body">
-                  <p class="card-text"></p>This is a wider card with supporting text below as a natural
-                  lead-in to additional content. This content is a little bit
-                  longer.
-                  <div class="d-flex justify-content-between align-items-center"></div>
-                  <div class="btn-group">
-                    <button class="btn btn-sm btn-outline-secondary" type="button">View</button>
-                    <button class="btn btn-sm btn-outline-secondary" type="button">Edit</button>
-                  </div><small class="text-body-secondary">9 mins</small>
-                </div>
+                <form><img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
+                  <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+                  <div class="form-floating">
+                    <input class="form-control" id="floatingInput" type="email" placeholder="name@example.com">
+                    <label for="floatingInput">Email address</label>
+                  </div>
+                  <div class="form-floating">
+                    <input class="form-control" id="floatingPassword" type="password" placeholder="Password">
+                    <label for="floatingPassword">Password</label>
+                  </div>
+                  <div class="form-check text-start my-3">
+                    <input class="form-check-input" id="checkDefault" type="checkbox" value="remember-me">
+                    <label class="form-check-label" for="checkDefault"></label>Remember me
+                  </div>
+                  <button class="btn btn-primary w-100 py-2" type="submit">Sign in</button>
+                  <p class="mt-5 mb-3 text-body-secondary">&copy; 2017&ndash;2025</p>
+                </form>
               </div>
             </div>
             <div class="col">
