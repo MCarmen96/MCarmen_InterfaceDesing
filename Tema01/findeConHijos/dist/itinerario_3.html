@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en" data-bs-theme="auto">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<meta name="description" content="" />
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors"  />
+<meta name="generator" content="Astro v5.13.2" />
+<title>Pricing example · Bootstrap v5.3</title>
+<link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/pricing/" />
+<script src="../js/color-modes.js"></script>
+<link href="../css/bootstrap.min.css" rel="stylesheet" />
+<meta name="theme-color" content="#712cf9" />
+<link href="../css/pricing.css" rel="stylesheet" />
+<link href="../css/sign-in.css" rel="stylesheet" />
+</head>
+<body> 
+<div class="container-fluid">
+  <div class="row">
+    <div class="col"><nav class="navbar navbar-expand-lg bg-primary" data-bs-theme="dark">
+   
+  <div class="container-fluid">
+    
+
+    <form class="d-flex">
+      <button class="btn btn-secondary me-2" type="button" 
+            data-bs-toggle="collapse" 
+            data-bs-target="#campoBusqueda" 
+            aria-expanded="false" 
+            aria-controls="campoBusqueda">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+          viewBox="0 0 16 16">
+          <path
+            d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+        </svg>
+    </button>
+      <div class="collapse collapse-horizontal m-0" id="campoBusqueda">
+        <input class="form-control" type="search" placeholder="Search">
+      </div>
+      
+    </form>
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor01"
+      aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    
+      
+    <div class="collapse navbar-collapse" id="navbarColor01">
+      <ul class="navbar-nav ms-auto ">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Te recomendamos</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mis itinerarios</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Mi cuenta</a>
+        </li>
+
+      </ul>
+    </div>
+
+  </div>
+</nav>
+
+
+<!--
+
+- data-bs-toggle="collapse":        Define que este botón es un 'disparador' para un componente collapse.
+- data-bs-target="#campoBusqueda":  Indica el ID del elemento que se debe mostrar u ocultar.
+- collapse:                         Clase base que oculta el contenido y habilita la animación.
+- collapse-horizontal:              Modificador que fuerza la animación a ser en la dimensión horizontal (ancho), en lugar de la vertical (altura) por defecto.
+- d-flex / align-items-center:      Asegura que el botón y el campo de búsqueda estén alineados correctamente en la barra.
+
+-->
+
+
+    </div>
+  </div>
+  <div class="row mt-5 justify-content-center">
+    <div class="col-lg-9">
+      <div class="container my-4">
+        <div class="row">
+          <div class="col-12 col-lg-8">
+            <h1 class="mb-3">Nombre Itinerario</h1>
+            <div class="clearfix mb-4"> 
+              <div class="bg-light ratio ratio-1x1 rounded-3"></div>
+              <div class="d-flex justify-content-end mb-3 d-lg-none">// Solo visible en móvil, si se desea<a class="btn btn-outline-success" href="https://www.google.com/maps/dir/?api=1&amp;destination=Direccion+del+Punto" target="_blank" rel="noopener noreferrer">
+                  <svg class="bi bi-geo-alt-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"></path>
+                  </svg> Ruta en Google Map</a></div>
+              <p class="lead">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quos possimus magnam sit eum nemo deserunt aspernatur! Nisi, ipsa. Expedita consectetur doloribus quod facere officiis, rerum odit iusto facilis libero.</p>
+              </p>
+            </div>
+            <div class="d-none d-lg-block mb-4"><a class="btn btn-outline-success" href="https://www.google.com/maps/dir/?api=1&amp;destination=Direccion+del+Punto" target="_blank" rel="noopener noreferrer">
+                <svg class="bi bi-geo-alt-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                  <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6"></path>
+                </svg> Ruta en Google Maps</a></div>
+          </div>
+          <!-- Columna lateral para comentarios - Ocupa 4 columnas en LG, 12 en MD y abajo-->
+          <div class="col-12 col-lg-4">
+            <div class="card shadow-sm mb-4">
+              <div class="card-header">
+                <h5 class="mb-0">Comentarios de otros usuarios</h5>
+              </div>
+              <div class="card-body">
+                <!-- Un comentario de ejemplo-->
+                <div class="mb-3 pb-3 border-bottom">
+                  <p class="fw-bold">user</p>
+                  <p class="mb-1">"¡Este lugar es fantástico para familias! A los niños les encantó la zona de juegos."</p><small class="text-muted">Hace 2 días</small>
+                </div>
+                <div class="mb-3 pb-3 border-bottom">
+                  <p class="fw-bold">user</p>
+                  <p class="mb-1">"¡Este lugar es fantástico para familias! A los niños les encantó la zona de juegos."</p><small class="text-muted">Hace 2 días</small>
+                </div>
+                <div class="text-center mt-4">
+                  <button class="btn btn-primary" data-bs-toggle="collapse" data-bs-target="#addCommentForm" aria-expanded="false" aria-controls="addCommentForm">
+                    <svg class="bi bi-plus-circle-fill" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                      <path d="M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z"></path>
+                    </svg> Añadir comentario
+                  </button>
+                  <div class="collapse mt-3" id="addCommentForm">
+                    <div class="card card-body">
+                      <form>
+                        <div class="mb-3">
+                          <label class="form-label" for="commentText">Tu comentario</label>
+                          <textarea class="form-control" id="commentText" rows="3" placeholder="Escribe tu comentario aquí..."></textarea>
+                        </div>
+                        <button class="btn btn-success" type="submit">Enviar comentario</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div><script src="../js/bootstrap.bundle.min.js" class="astro-vvvwv3sm" ></script>
+</body>
+</html>

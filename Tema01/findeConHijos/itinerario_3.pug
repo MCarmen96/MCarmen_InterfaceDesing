@@ -1,0 +1,51 @@
+extends homeItinerario.pug 
+block content
+    .container.my-4
+        .row
+            .col-12.col-lg-8
+
+                h1.mb-3 Nombre Itinerario
+                .clearfix.mb-4 
+                    .bg-light.ratio.ratio-1x1.rounded-3
+                    .d-flex.justify-content-end.mb-3.d-lg-none // Solo visible en móvil, si se desea
+                        a.btn.btn-outline-success(href='https://www.google.com/maps/dir/?api=1&destination=Direccion+del+Punto' target='_blank' rel='noopener noreferrer')
+                            svg(xmlns='http://www.w3.org/2000/svg', width='16', height='16', fill='currentColor', class='bi bi-geo-alt-fill', viewBox='0 0 16 16')
+                                path(d='M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6')
+                            |  Ruta en Google Map
+                    p.lead
+                        p Lorem, ipsum dolor sit amet consectetur adipisicing elit. Maxime quos possimus magnam sit eum nemo deserunt aspernatur! Nisi, ipsa. Expedita consectetur doloribus quod facere officiis, rerum odit iusto facilis libero.
+                .d-none.d-lg-block.mb-4
+                    a.btn.btn-outline-success(href='https://www.google.com/maps/dir/?api=1&destination=Direccion+del+Punto' target='_blank' rel='noopener noreferrer')
+                        svg(xmlns='http://www.w3.org/2000/svg', width='16', height='16', fill='currentColor', class='bi bi-geo-alt-fill', viewBox='0 0 16 16')
+                            path(d='M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10m0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6')
+                        |  Ruta en Google Maps
+
+            // Columna lateral para comentarios - Ocupa 4 columnas en LG, 12 en MD y abajo
+            .col-12.col-lg-4
+                .card.shadow-sm.mb-4
+                    .card-header
+                        h5.mb-0 Comentarios de otros usuarios
+                    .card-body
+                        // Un comentario de ejemplo
+                        .mb-3.pb-3.border-bottom
+                            p.fw-bold user
+                            p.mb-1 "¡Este lugar es fantástico para familias! A los niños les encantó la zona de juegos."
+                            small.text-muted Hace 2 días
+                        .mb-3.pb-3.border-bottom
+                            p.fw-bold user
+                            p.mb-1 "¡Este lugar es fantástico para familias! A los niños les encantó la zona de juegos."
+                            small.text-muted Hace 2 días
+
+                        .text-center.mt-4
+                            button.btn.btn-primary(data-bs-toggle='collapse', data-bs-target='#addCommentForm', aria-expanded='false', aria-controls='addCommentForm')
+                                svg(xmlns='http://www.w3.org/2000/svg', width='16', height='16', fill='currentColor', class='bi bi-plus-circle-fill', viewBox='0 0 16 16')
+                                    path(d='M16 8A8 8 0 1 1 0 8a8 8 0 0 1 16 0M8.5 4.5a.5.5 0 0 0-1 0v3h-3a.5.5 0 0 0 0 1h3v3a.5.5 0 0 0 1 0v-3h3a.5.5 0 0 0 0-1h-3z')
+                                |  Añadir comentario
+                            #addCommentForm.collapse.mt-3
+                                .card.card-body
+                                    form
+                                        .mb-3
+                                            label.form-label(for='commentText') Tu comentario
+                                            textarea.form-control(id='commentText', rows='3', placeholder='Escribe tu comentario aquí...')
+                                        button.btn.btn-success(type='submit') Enviar comentario
+
