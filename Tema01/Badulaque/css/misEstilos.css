@@ -1,0 +1,36 @@
+.nav{
+    background-color: rgb(252, 180, 155);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width:100%;
+}
+body{
+    font-family:'Indie Flower',cursive;
+    font-size: 2rem;
+
+}
+a{
+    margin: 1rem;
+    text-align: center;
+    padding: 1rem;
+    color: black;
+    font-weight: bold;
+}
+
+a:hover{
+    background-color: rgb(245, 219, 209);
+    border-radius: 1rem;
+    color: rgb(99, 99, 99);
+}
+
+footer{
+    background-color: rgb(252, 180, 155);
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 1rem;
+    text-align: center;
+    width:100%;
+    position: bottom;
+}
