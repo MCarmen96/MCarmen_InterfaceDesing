@@ -7,7 +7,7 @@
 
         <link rel="stylesheet" href="../css/normalize.css">
         <link rel="stylesheet" href="../css/skeleton.css">
-        <link rel="stylesheet" href="../css/misEstilos.css">
+        <link rel="stylesheet" href="../css/navBarFooter.css">
         link(rel='preconnect', href='https://fonts.googleapis.com')
         link(rel='preconnect', href='https://fonts.gstatic.com', crossorigin)
         link(href='https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap', rel='stylesheet')
@@ -18,15 +18,7 @@
         include navbar.pug
         div.container
             div.row
-                div.twelve.columns 
-            div.row
-                div.nine.columns
-                    
-                div.three.columns
-                   
-            div.row
-                div.twelve.columns 
-                    
+                block content
         include footer.pug 
     </body>
     
