@@ -1,0 +1,12 @@
+.card{
+    background-color: antiquewhite;
+    border-radius: 2rem;
+    width: 100px;
+    padding: 1rem;
+    border: 1rem solid grey ;
+    margin: 2rem;
+    
+}
+.user{
+    text-align: right;
+}
