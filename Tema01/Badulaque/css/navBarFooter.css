@@ -17,6 +17,7 @@ a{
     padding: 1rem;
     color: black;
     font-weight: bold;
+    text-decoration: none;
 }
 
 a:hover{
