@@ -1,0 +1,18 @@
+
+.portada{
+    height:60vh ;
+    width: 100%;
+    background-image: url('../Imagenes/bannerOri.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+.texto{
+    
+    text-align: center;
+}
+
