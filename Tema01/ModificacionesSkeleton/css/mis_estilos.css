@@ -1,0 +1,11 @@
+ul.nav_horizontal li {
+  display: inline;
+}
+
+ul.nav_vertical li {
+  display: inline;
+}
+
+a {
+  color: rgb(217, 80, 255);
+}/*# sourceMappingURL=mis_estilos.css.map */
