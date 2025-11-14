@@ -7,6 +7,7 @@
     text-align: center;
 }
 .cardPack{
+    display: block;
     width: 100%;
     box-shadow: 2px 2px 8px 1px #888888;
     border-radius: 2rem;
