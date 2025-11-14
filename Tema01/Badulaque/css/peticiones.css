@@ -1,0 +1,8 @@
+.box-form{
+    width: 100%;
+    padding: 3rem;
+    margin: 5rem;
+    text-align: center;
+    box-shadow: 1px 1px 8px 1px #b8b8b8;
+    border-radius: 2rem;
+}
