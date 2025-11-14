@@ -1,0 +1,31 @@
+.packs{
+    width:100%;
+    padding: 1rem;
+    
+}
+.title{
+    text-align: center;
+}
+.cardPack{
+    width: 100%;
+    box-shadow: 2px 2px 8px 1px #888888;
+    border-radius: 2rem;
+    padding-bottom: 100%;
+    height: 0;
+    transition: transform 0.3s ease;
+    background-image: url('../Imagenes/cardPakcs.png');
+    background-blend-mode: exclusion;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+
+}
+.cardPack:hover{
+    transform: scale(1.05);
+}
+
+.text-card{
+    padding: 5rem;
+    text-align: center;
+
+}
