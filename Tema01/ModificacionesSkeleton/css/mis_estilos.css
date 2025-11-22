@@ -7,5 +7,9 @@ ul.nav_vertical li {
 }
 
 a {
-  color: rgb(217, 80, 255);
+  color: var(--color2);
 }/*# sourceMappingURL=mis_estilos.css.map */
+
+body{
+  background-color: var(--color3);
+}

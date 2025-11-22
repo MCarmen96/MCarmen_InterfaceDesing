@@ -1,9 +1,14 @@
 
-
+// esto es una macro lo que nos. pertmite generar contenido en el archivo en el que se llame
+// nos permite reutilizar un generador en cualquier parte del codigo
 @mixin generar-columnas($dimesion){
     $i:0;
-    $dif_columns:12;
+    .one-#{$dimensions}.column{
+        width: 4.66666666667%;
+    }
+
     @each $tam in one,two,three,four,five,six,seven,eight,nine,ten,eleven,twelve{
+
         .#{$tam}-#{$dimesion}.columns{
             width:4.66666666667% + $i*8.66666666667%;
         }

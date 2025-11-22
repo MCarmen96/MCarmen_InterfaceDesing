@@ -11,7 +11,11 @@
         display: block;
     }
 }
+/*
+    cuando es max-width es hasta el numero
+    y cuando es min-with es
 
+*/
 @media (min-width: 750px) {
     .container {
         width: 80%; 
@@ -24,8 +28,9 @@
         margin-left: 4%; }
     .column:first-child,
     .columns:first-child {
-        margin-left: 0; }
-
+        margin-left: 0; 
+    }
+    // llamo a la macro para que me genere el contenido del mismo    
     @include generar-columnas("lg");
 
     .one-third-lg.column               { width: 30.6666666667%; }
