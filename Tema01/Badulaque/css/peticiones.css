@@ -6,3 +6,22 @@
     box-shadow: 1px 1px 8px 1px #b8b8b8;
     border-radius: 2rem;
 }
+
+.box-form h1{
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+.box-form label{
+    display: block;
+    margin-bottom: 15px;
+}
+
+.box-form input, button{
+    width: 100%;
+    margin-bottom: 1em;
+    text-align: center;
+}
+button:hover{
+    background-color: rgb(231, 192, 219);
+}

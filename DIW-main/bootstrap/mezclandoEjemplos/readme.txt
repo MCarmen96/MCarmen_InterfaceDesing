@@ -1,1 +1,0 @@
-En este ejemplo se mezclan 2 ejemplos de la documentación de Bootstrap: pricing y signing.
