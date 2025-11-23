@@ -1,0 +1,27 @@
+extends layout.pug 
+block content 
+    .row.box-form 
+        h1 Formulario Chuches
+        .six.columns
+            label(for="" ) Nombre user    
+                input(type="text" placeholder="")
+            label(for="") Email user    
+                input(type="email")
+            
+        .six.columns
+            label(for="") Nombre chuche 
+                input(type="text")
+            label(for="") Tipo de chuche 
+                select(name="")
+                    option(value="" disabled selected) Elige una opcion...
+                    option(value="") Caramelo 
+                    option(value="") Chocolate 
+                    option(value="") Gominola 
+                    option(value="") Piruleta 
+                    option(value="") Gusanitos 
+                    option(value="") Otro
+            label(for="") ¿Donde la viste? 
+                input(type="text")
+            label(for="") Comentarios
+                textarea(name="") 
+        button Send
