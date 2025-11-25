@@ -1,5 +1,5 @@
 
-    // esto es una macro lo que nos. pertmite generar contenido en el archivo en el que se llame
+    // esto es una macro lo que nos pertmite generar contenido en el archivo en el que se llame
     // nos permite reutilizar un generador en cualquier parte del codigo
 
     @mixin generar-columnas ( $dimension){
@@ -24,5 +24,5 @@
         margin-left: 0;
     }
         
-    } 
+} 
 

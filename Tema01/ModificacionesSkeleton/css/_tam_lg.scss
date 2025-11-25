@@ -10,12 +10,14 @@
     .aparecer{
         display: block;
     }
+    @include generar-columnas("sm");
 }
 /*
-    cuando es max-width es hasta el numero
-    y cuando es min-with es
+    cuando es max-width es hasta esa regla includo el ancho
+    y cuando es min-with es el minimo para aplicar esta regla
 
 */
+// solo actio a partir de 750px
 @media (min-width: 750px) {
     .container {
         width: 80%; 
