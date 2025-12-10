@@ -1,0 +1,43 @@
+// Mixin para calcular el ancho en una rejilla de 10 columnas
+$names: one,two,three,four,five,six,seven,eight,nine,ten;
+$i:1;
+@each $name in $names{
+    .#{$name}.column,
+    .#{$name}.columns{
+        width: calc((#{$i}/10)*100%);
+    }
+
+    .offset-by-#{$name}.column,
+    .offset-by-#{$name}.columns {
+        margin-left:calc((#{$i} / 10)* 100%);
+    }
+    //contador
+    $i:$i+1;
+}
+// Generar clases 1 → 10 columnas
+
+
+
+@mixin generar-columnas($dimension) {
+  $i: 1;
+  $nombres: one, two, three, four, five, six, seven, eight, nine, ten;
+
+  @each $nombre in $nombres {
+    // Columnas
+    .#{$nombre}-#{$dimension}.column,
+    .#{$nombre}-#{$dimension}.columns {
+      width: ($i / 10) * 100%;
+    }
+
+    // Offset (desplazamiento)
+    .offset-#{$dimension}-by-#{$nombre}.column,
+    .offset-#{$dimension}-by-#{$nombre}.columns {
+      margin-left: ($i / 10) * 100%;
+    }
+
+    $i: $i + 1;
+  }
+}
+//@import 'generar-columnas';
+
+//@include generar-columnas("ten");

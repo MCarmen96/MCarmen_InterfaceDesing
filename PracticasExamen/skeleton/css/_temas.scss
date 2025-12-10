@@ -1,0 +1,28 @@
+
+//reset navegador ancho y alto
+* {
+    box-sizing: border-box;
+}
+
+
+
+body.tema.claro{
+
+    background-color: var(--colorTemaClaro);
+
+    ul{
+        a{
+            color: var(--colorAsClaro);
+        }
+    }
+}
+
+body.tema.oscuro{
+    background-color: var(--colorTemaOscuro);
+
+    ul{
+        a{
+            color: var(--colorAsOscuro);
+        }
+    }
+}

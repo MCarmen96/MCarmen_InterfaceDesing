@@ -1,0 +1,99 @@
+.one.column,
+.one.columns {
+  width: calc((1/10)*100%);
+}
+
+.offset-by-one.column,
+.offset-by-one.columns {
+  margin-left: calc((1 / 10)* 100%);
+}
+
+.two.column,
+.two.columns {
+  width: calc((2/10)*100%);
+}
+
+.offset-by-two.column,
+.offset-by-two.columns {
+  margin-left: calc((2 / 10)* 100%);
+}
+
+.three.column,
+.three.columns {
+  width: calc((3/10)*100%);
+}
+
+.offset-by-three.column,
+.offset-by-three.columns {
+  margin-left: calc((3 / 10)* 100%);
+}
+
+.four.column,
+.four.columns {
+  width: calc((4/10)*100%);
+}
+
+.offset-by-four.column,
+.offset-by-four.columns {
+  margin-left: calc((4 / 10)* 100%);
+}
+
+.five.column,
+.five.columns {
+  width: calc((5/10)*100%);
+}
+
+.offset-by-five.column,
+.offset-by-five.columns {
+  margin-left: calc((5 / 10)* 100%);
+}
+
+.six.column,
+.six.columns {
+  width: calc((6/10)*100%);
+}
+
+.offset-by-six.column,
+.offset-by-six.columns {
+  margin-left: calc((6 / 10)* 100%);
+}
+
+.seven.column,
+.seven.columns {
+  width: calc((7/10)*100%);
+}
+
+.offset-by-seven.column,
+.offset-by-seven.columns {
+  margin-left: calc((7 / 10)* 100%);
+}
+
+.eight.column,
+.eight.columns {
+  width: calc((8/10)*100%);
+}
+
+.offset-by-eight.column,
+.offset-by-eight.columns {
+  margin-left: calc((8 / 10)* 100%);
+}
+
+.nine.column,
+.nine.columns {
+  width: calc((9/10)*100%);
+}
+
+.offset-by-nine.column,
+.offset-by-nine.columns {
+  margin-left: calc((9 / 10)* 100%);
+}
+
+.ten.column,
+.ten.columns {
+  width: calc((10/10)*100%);
+}
+
+.offset-by-ten.column,
+.offset-by-ten.columns {
+  margin-left: calc((10 / 10)* 100%);
+}

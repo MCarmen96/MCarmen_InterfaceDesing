@@ -1,0 +1,21 @@
+@mixin generarBotones(){
+    
+    $colores:(
+        "color1":"lightcoral",
+        "color2":"lightblue",
+        "color3":"lightyellow",
+        "color4":"lightpink",
+        "color5":"lightgreen",
+    );
+
+    @each $nombre, $color in $colores{
+        .btn-#{$nombre}{
+            background-color: #{$color};
+            border: 1px solid black;
+        }
+    }
+}
+
+
+
+

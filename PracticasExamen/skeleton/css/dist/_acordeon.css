@@ -1,0 +1,26 @@
+div.acordeon div {
+  display: block;
+  width: 100%;
+}
+div.acordeon div h3 {
+  width: 100%;
+  padding-left: 1em;
+  background-color: lightgoldenrodyellow;
+  height: 3em;
+  line-height: 3em;
+  color: black;
+  margin: 0;
+}
+div.acordeon div h3:hover {
+  background-color: lightseagreen;
+}
+div.acordeon div h3 span {
+  float: right;
+  padding-right: 2em;
+}
+div.acordeon div article {
+  background-color: aliceblue;
+  color: black;
+  border: 2px solid aliceblue;
+  display: none;
+}

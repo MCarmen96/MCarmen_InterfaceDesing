@@ -1,0 +1,17 @@
+* {
+  box-sizing: border-box;
+}
+
+body.tema.claro {
+  background-color: var(--colorTemaClaro);
+}
+body.tema.claro ul a {
+  color: var(--colorAsClaro);
+}
+
+body.tema.oscuro {
+  background-color: var(--colorTemaOscuro);
+}
+body.tema.oscuro ul a {
+  color: var(--colorAsOscuro);
+}
